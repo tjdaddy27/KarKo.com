@@ -1,0 +1,525 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000000;
+    color: #000000;
+    line-height: 1.6;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #004466;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1.5rem;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #006699;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #006699;
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+.hero p {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+/* Stylish Button */
+.styled-button {
+    background-color: #f39c12;
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.styled-button:hover {
+    background-color: #e67e22;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #004466;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Section for the image at the bottom */
+.image-section {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+/* Styled image with a decorative border */
+.styled-image {
+    border: 10px solid #f39c12;  /* Stylish yellow-orange border */
+    border-radius: 20px;          /* Rounded corners for the image */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Adding a shadow for depth */
+    width: 80%;                   /* Responsive width */
+    max-width: 600px;              /* Max size of the image */
+    transition: transform 0.3s ease; /* Smooth transition effect */
+}
+
+/* Hover effect to add interactivity */
+.styled-image:hover {
+    transform: scale(1.05);        /* Slight zoom when hovered */
+}
+
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.navbar {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.navbar a.active {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* About Section */
+.about-section {
+    background-color: #fff;
+    padding: 50px;
+}
+
+.about-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+.team-section {
+    margin-top: 40px;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+footer {
+    background-color: #333;
+    color: rgb(10, 247, 195);
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #fc0202;
+    padding: 50px 0;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-section h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-section p {
+    margin-bottom: 30px;
+    color: #ff0000;
+}
+
+/* Contact Form */
+.contact-form {
+    background-color: #feffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 255, 170, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #555;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.learn-more-btn {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    backface-visibility: hidden;
+}
+
+.learn-more-btn:hover {
+    background-color: #555;
+}
+
+/* Cube Styles */
+.cube-container {
+    position: fixed; /* Use fixed position so it stays at the bottom as you scroll */
+    bottom: 20px;    /* Place at the bottom with some space from the edge */
+    width: 100px;
+    height: 100px;
+    perspective: 1000px;
+}
+
+.cube-container.left {
+    left: 20px;  /* Place the left cube on the bottom left */
+}
+
+.cube-container.right {
+    right: 20px; /* Place the right cube on the bottom right */
+}
+
+.cube {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    transform-style: preserve-3d;
+    animation: rotate 5s infinite linear;
+}
+
+.cube .face {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.7);
+    border: 2px solid #000000;
+}
+
+.face.front {
+    transform: translateZ(50px);
+}
+
+.face.back {
+    transform: rotateY(180deg) translateZ(50px);
+}
+
+.face.left {
+    transform: rotateY(-90deg) translateZ(50px);
+}
+
+.face.right {
+    transform: rotateY(90deg) translateZ(50px);
+}
+
+.face.top {
+    transform: rotateX(90deg) translateZ(50px);
+}
+
+.face.bottom {
+    transform: rotateX(-90deg) translateZ(50px);
+}
+
+/* Cube Animation */
+@keyframes rotate {
+    from {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    to {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #4a90e2, #000000); /* Background gradient */
+    color: white; /* Default text color */
+}
+
+nav {
+    position: fixed; /* Fixed position for the nav bar */
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 10px 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000; /* Ensure nav is above other content */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.background {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between boxes */
+    padding: 100px 20px; /* Padding to avoid overlap with the nav */
+}
+
+.category-box {
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent boxes */
+    height: 150px; /* Fixed height for boxes */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s; /* Smooth scale effect */
+}
+
+.category-box:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+
+    
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif; /* Font for the entire site */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: #f4f4f4; /* Light background color */
+}
+
+/* Navigation Bar Styles */
+nav {
+    background-color: #333; /* Dark background for the navbar */
+    padding: 10px 20px; /* Padding for spacing */
+    position: relative; /* Positioning relative to the page */
+}
+
+nav ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    text-align: right; /* Align links to the right */
+}
+
+nav li {
+    display: inline; /* Display links in a row */
+    margin-right: 20px; /* Space between links */
+}
+
+nav a {
+    color: white; /* White text color */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 18px; /* Font size for better visibility */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Underline on hover for better UX */
+}
+
+/* Search Container Styles */
+.search-container {
+    text-align: center; /* Center the search bar */
+    margin: 20px 0; /* Margin for spacing */
+}
+
+.search-input {
+    padding: 10px; /* Padding for the input */
+    width: 200px; /* Width of the input */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #ccc; /* Border styling */
+}
+
+.search-button {
+    padding: 10px 15px; /* Padding for the button */
+    border-radius: 5px; /* Rounded corners */
+    border: none; /* Remove border */
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    cursor: pointer; /* Pointer cursor */
+    margin-left: 5px; /* Space between input and button */
+}
+
+.search-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Category Box Styles */
+.background {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between boxes */
+    padding: 20px; /* Padding to avoid overlap with the nav */
+}
+
+.category-box {
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent boxes */
+    height: 150px; /* Fixed height for boxes */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    transition: transform 0.3s; /* Smooth scale effect */
+    display: block; /* Make it a block element for proper link behavior */
+}
+
+.category-box:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+/* Page Specific Styles */
+h1 {
+    text-align: center; /* Center the heading */
+    margin: 20px 0; /* Margin for spacing */
+}
+
+p {
+    text-align: center; /* Center the paragraph text */
+    margin: 20px 0; /* Margin for spacing */
+}

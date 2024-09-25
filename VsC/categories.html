@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Categories</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <nav style="text-align: right;">
+        <ul style="list-style-type: none; padding: 0; margin: 0;">
+            <li style="display: inline; margin-right: 20px;"><a href="index.html">Home</a></li>
+            <li style="display: inline; margin-right: 20px;"><a href="about.html">About</a></li>
+            <li style="display: inline; margin-right: 20px;"><a href="contact.html">Contact Us</a></li>
+            <li style="display: inline;"><a href="categories.html">Categories</a></li>
+        </ul>
+    </nav>
+    
+    <div class="search-container">
+        <input type="text" placeholder="Search categories..." class="search-input">
+        <button class="search-button">Search</button>
+    </div>
+
+    <div class="background" id="categoriesContainer"></div>
+
+    <script>
+        const categories = [
+            { name: "Category 1", url: "category1.html" },
+            { name: "Category 2", url: "category2.html" },
+            { name: "Category 3", url: "category3.html" },
+            { name: "Category 4", url: "category4.html" },
+            { name: "Category 5", url: "category5.html" },
+            { name: "Category 6", url: "category6.html" },
+            { name: "Category 7", url: "category7.html" },
+            { name: "Category 8", url: "category8.html" },
+            { name: "Category 9", url: "category9.html" },
+            { name: "Category 10", url: "category10.html" },
+            { name: "Category 11", url: "category11.html" },
+            { name: "Category 12", url: "category12.html" },
+            { name: "Category 13", url: "category13.html" },
+            { name: "Category 14", url: "category14.html" },
+            { name: "Category 15", url: "category15.html" },
+            { name: "Category 16", url: "category16.html" },
+            { name: "Category 17", url: "category17.html" },
+            { name: "Category 18", url: "category18.html" },
+            { name: "Category 19", url: "category19.html" },
+            { name: "Category 20", url: "category20.html" },
+            { name: "Category 21", url: "category21.html" },
+            { name: "Category 22", url: "category22.html" },
+            { name: "Category 23", url: "category23.html" },
+            { name: "Category 24", url: "category24.html" },
+        ];
+    
+        const categoriesContainer = document.getElementById('categoriesContainer');
+    
+        categories.forEach(category => {
+            const box = document.createElement('a');
+            box.href = category.url; // Ensure this matches the file names
+            box.classList.add('category-box');
+            categoriesContainer.appendChild(box);
+        });
+    </script>
+    
+</body>
+</html>
